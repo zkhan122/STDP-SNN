@@ -1,0 +1,14 @@
+Stimulate with pattern as stimulus (various patterns of stimuli, pattern A, B)
+When pattern A is used, use specific neutrons, when pattern B is used, use specific neurons
+N = 100, 1000 (iterations)
+
+
+Can I show some neurons become responsive to some stimuli (patterns) -> selectivity
+
+(Using all neurons would mean less selectivity , less variability)
+
+50% of excitatory neurons -> pA
+50% of excitatory neurons -> pB
+
+pairwise bernoulli values for probability (e = excitatory, i = inhibitory)
+e to e: 0.25, e to i: 0.15, i to e: 0.3; i to i: 0.05
