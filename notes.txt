@@ -1,3 +1,4 @@
+12/6/25
 Stimulate with pattern as stimulus (various patterns of stimuli, pattern A, B)
 When pattern A is used, use specific neutrons, when pattern B is used, use specific neurons
 N = 100, 1000 (iterations)
