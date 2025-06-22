@@ -50,9 +50,9 @@ sequence C
 SO temporal relationship that network should find would be
 
 10, 110, 210, 310, (PREDICTION): 410
- ↓       ↓         ↓        ↓       		    ↓
+ ↓       ↓         ↓        ↓       		    
 30, 130, 230, 330, (PREDICTION): 430
- ↓       ↓         ↓        ↓       	↓                   ↓
+ ↓       ↓         ↓        ↓       	           
 50, 150, 250, 350, (PREDICTION): 450
 
 - network has learned the repetition interval 
