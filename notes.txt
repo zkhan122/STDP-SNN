@@ -13,3 +13,46 @@ Can I show some neurons become responsive to some stimuli (patterns) -> selectiv
 
 pairwise bernoulli values for probability (e = excitatory, i = inhibitory)
 e to e: 0.25, e to i: 0.15, i to e: 0.3; i to i: 0.05
+
+
+
+22/6/25:
+
+Show SNNs in real life scenario of pattern recognition or temporal-sequential learning
+
+TEMPORAL SEQUENTIAL learning
+
+Given sequences A, B, C, use SNN with STDP to predict next elements
+
+A : [10, 110, 210, 310]
+B: [30, 130, 230, 330]
+C: [50, 150, 250, 350]
+
+SNN should be predicting that
+A->B->C : (10->30->50), (110->130->150), (210->230->250), (310->330->350), ... ?
+
+which would mean the SNN should give an output of (410->430->450)
+so that now
+A =  [10, 110, 210, 310, 410]
+B = [30, 130, 230, 330, 430]
+C = [50, 150, 250, 350, 450]
+
+difference is 20ms in spike timings
+
+TEMPORAL RELATIONSHIP would be 
+
+sequence A  (A triggers B after 20ms)
+         ↓ 
+sequence B  (B triggers C after 20ms)
+         ↓ 
+sequence C
+
+SO temporal relationship that network should find would be
+
+10, 110, 210, 310, (PREDICTION): 410
+ ↓       ↓         ↓        ↓       		    ↓
+30, 130, 230, 330, (PREDICTION): 430
+ ↓       ↓         ↓        ↓       	↓                   ↓
+50, 150, 250, 350, (PREDICTION): 450
+
+- network has learned the repetition interval 
